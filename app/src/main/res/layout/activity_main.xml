@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText android:id="@+id/num1"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="30dp" android:background="@android:color/white" android:ems="10" android:hint="Number1(0)" android:inputType="number" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num1"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="number2(0)"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textSize="30dp" />
+    <TextView android:id="@+id/result"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:color/white" android:text="result" android:textSize="25sp" android:layout_below="@+id/num2" />
+    <Button android:id="@+id/sum"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/result" android:onClick="doSum" android:text="+" />
+    <Button android:id="@+id/sub"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/sum" android:onClick="doSub"
+
+        android:text="-" />
+    <Button android:id="@+id/div"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/sub" android:onClick="doDiv" android:text="/" />
+    <Button android:id="@+id/mul"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/div" android:onClick="doMul" android:text="x" />
+</RelativeLayout>
